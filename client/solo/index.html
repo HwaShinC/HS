@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta charset=UTF-8>
+<title>Agark.kr 솔로게임</title>
+<meta name="description" content="한국 최초 아가리오 솔로게임! 지금 바로 플레이 고고씽!" />
+<meta name="keywords" content="agark.kr">
+<script src='http://code.jquery.com/jquery-latest.min.js'></script>
+<script src='etc.js'></script>
+<script src="solo-agark.js"></script>
+<script type='text/javascript'>
+  $(document).ready(function() {
+    if(isCanvasSupported())
+      cg.init()
+    else
+      $(document.body).html("<style type='text/css'>p {text-align: center} body {padding: 10px}</style><p>You browser does not support HTML5, which is required to run this game.</p><p>I recommend Google Chrome <br /><a href='http://www.google.com/chrome'><img src='http://www.onlinecomputerfixes.com/wp-content/uploads/2010/10/google-chrome-logo.jpg' /></a></p>")
+  })
+</script>
+<style type='text/css'>
+body {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+canvas {
+    background-color: black;
+}
+</style>
+</head>
+<body>
+<main style="display:none">
+<h1>솔로 아가리오!</h1>
+<p>한국 최초 솔로 아가리오 게임! 지금 바로 플레이해보세요!</p>
+</main>
+<canvas></canvas>
+</body>
+</html>

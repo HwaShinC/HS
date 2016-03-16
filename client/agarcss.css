@@ -1,0 +1,279 @@
+        body {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+		
+		#notice {
+	        position: "absolute",
+	        bottom: "50px",
+	        right: "10px",
+	        width: "215.5px",
+	        height: "215.5px",
+	        background: ""
+		}
+		
+        #rightsidebox{
+			width: 320px;
+			background-color: #FFFFFF;
+			margin: 10px auto;
+			border-radius: 5px;
+			padding: 10px 5px 10px 5px;
+			position: absolute;
+			right: -97%;
+			top: 25%;
+			webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+		    transform: translate(-50%, -50%);
+	    }
+		
+		#leftsidebox{
+			width: 320px;
+			background-color: #;
+			margin: 10px auto;
+			border-radius: 5px;
+			padding: 10px 5px 10px 5px;
+			position: absolute;
+			right: 66%;
+			top: 33%;
+			webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+		    transform: translate(-50%, -50%);
+	    }
+		
+		#levelBar{
+		    background: #f0ad4e;
+		    transition:width .6s ease;
+		    line-height: 20px;
+		    height: 100%;
+		}
+
+		#liquid{
+		    background: url('') right center;
+		    opacity: 0.3;
+		    width:auto;
+		    height: 20px;
+		    z-index: -1;
+		    display: block;
+		}
+
+		#level{
+    	    position: fixed;
+    	    bottom: 245px;
+    	    right: 10px;
+    	    z-index: 2;
+    	    width: 205px;
+    	    color: #fff;
+    	    display: block;
+		}
+		
+		#divmd {
+            position:relative;
+        }
+
+		#level .twirl{
+		    width: 30px;
+		    height: 0px;
+		    z-index: 5;
+		}
+		
+		#lvl{
+    	    color: #fff;
+    	    border-radius:50%;
+    	    width: 30px;
+    	    display: block;
+    	    text-align: center;
+    	    line-height: 30px;
+    	    position: absolute;
+    	    left: -10px;
+    	    height: 30px;
+    	    border:solid 3px #41608f;
+    	    background: #5877a5;
+    	    margin-top: -5px;
+    	    z-index: 5;
+		}
+
+		#level label{
+    	    color: #41608f;
+    	    padding-left: 20px;
+		}
+
+		.progress{
+    	    box-shadow: none !important;
+    	    border-radius:4px;
+    	    border:solid 3px #41608f;
+		}
+		
+		#divpop .look {
+      	    position: absolute;
+      	    left: 0;
+      	    top: 0;
+      	    width: 440px;
+      	    height: 200px;
+      	    display: none;
+      	    z-index: 9999;
+      	    padding: 0px;
+      	    border-radius: 0px;
+      	    text-align: center;
+		}
+
+		#divpop #layer0 {
+      	    width: 750px;
+      	    height: 300px;
+      	    padding: 0px;
+      	    background-color: #ffffff;
+      	    font-family: 'Nanum Gothic', sans-serif;
+      	    font-size: 15pt;
+		}
+
+		#face{
+		    height: 30px;
+			width: 30px;
+			border-radius:3px;
+			right: 8;
+			top: 30;
+			z-index: 1000;
+			position: absolute;
+			padding : 0px 0px;
+		}
+		
+        #canvas {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .checkbox label {
+            margin-right: 10px;
+        }
+
+        form {
+            margin-bottom: 0px;
+        }
+
+        .btn-play, .btn-settings, .btn-spectate {
+            display: block;
+            height: 35px;
+        }
+
+        .btn-play {
+            width: 86%;
+            float: left;
+        }
+
+        .btn-settings {
+            width: 12%;
+            float: right;
+        }
+
+        .btn-spectate {
+		    width: 33%;
+            display: block;
+            float: right;
+        }
+
+		#sidelook {
+  		    position: absolute;
+  		    left: 0;
+  		    top: 0;
+  		    z-index: 9000;
+  		    background-color: #000;
+  		    display: none;
+		}
+		
+        #adsBottom {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        #adsBottomInner {
+            margin: 0px auto;
+            width: 728px;
+            height: 90px;
+            border: 5px solid white;
+            border-radius: 5px 5px 0px 0px;
+            background-color: #FFFFFF;
+            box-sizing: content-box;
+        }
+
+        .region-message {
+            display: none;
+            margin-bottom: 12px;
+            margin-left: 6px;
+            margin-right: 6px;
+            text-align: center;
+        }
+
+        #nick, #locationKnown #region {
+            width: 67%;
+            float: left;
+        }
+
+        #locationUnknown #region {
+            margin-bottom: 15px;
+        }
+
+        #gamemode, #spectateBtn {
+            width: 33%;
+            float: right;
+        }
+
+        #helloDialog {
+            width: 500px;
+            background-color: #FFFFFF;
+            margin: 10px auto;
+            border-radius: 5px;
+            padding: 5px 15px 5px 15px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        #chat_textbox {
+            -webkit-transition: all .5s ease-in-out;
+            -moz-transition: all .5s ease-in-out;
+            -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+            position: absolute;
+			border-radius: 8px;
+            z-index: 1;
+            bottom: 10px;
+            background: rgba(0, 0, 0, .2);
+            border: 0px;
+            outline: none;
+            color: #FFF;
+            height: 30px;
+            text-indent: 12px;
+            left: 10px;
+            width: 300px;
+        }
+		
+        #imgpos {
+			position: fixed;
+		    bottom: 10px;
+		    right: 10px;
+		    width: 215.5px;
+		    height: 246.5px;
+		}
+		
+        #chat_textbox:focus {
+            background: rgba(0, 0, 0, .5);
+        }
+
+        #a300x250 {
+            width: 300px;
+            height: 250px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+        }
